@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <title>Rock-Paper-Scissors Project</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+
+    </head>
+    <body>
+        <div class="btn-div" style="width: 50%;margin-left:50%;margin-top: 40%;">
+            <button class="btn-rule">RULES</button>
+
+        </div>
+        <div class="rule-model" style="width:100%; height:100%;margin-top:340px;">
+            <div class="rule-image">
+                <div>
+                    <button class="close">
+                    <img src="./Ellipse 6.png" id="monu3" >
+                    <img src="./X.png" id="monu4">
+                    </button>
+                </div>
+                
+                <img src="./Frame 4.png" style="width: 400px;height:450px;" >
+            </div>
+        </div>    
+        <div class="girl">
+            <div class="man">
+            <div>
+            <img src="./Group 5.png"id="cut">
+            <img src="./Vector (1).png" id="knife">
+            <h1 class="butter">HURRAY!!</h1>
+            <h4 class="bread">YOU WON THE GAME</h4>
+            <a href="./index.html" target="_parent"><button class="play4">PLAY AGAIN</button></a> 
+            </div>
+            </div>
+       <script>
+        let rulebtn=document.querySelector(".btn-rule");
+        let rulemodel=document.querySelector(".rule-model");
+        let ruleimage=document.querySelector(".rule-image");
+        rulebtn.addEventListener("click",()=>{
+        rulemodel.style.display="flex";
+        setTimeout(()=>{
+        ruleimage.style.transform="translateY(0)";
+        },400);
+
+      })
+        let close=document.querySelector(".close");
+         close.addEventListener("click",()=>{
+         ruleimage.style.transform="translateY(-200%)"; 
+         setTimeout(()=>{
+         rulemodel.style.display="none";
+         },400);
+
+      })
+       </script>
+    </body>
+</html>
